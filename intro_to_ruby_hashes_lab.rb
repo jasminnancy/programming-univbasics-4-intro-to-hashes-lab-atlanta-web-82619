@@ -24,8 +24,8 @@ end
 
 def update_counting_hash(hash, key)
   if update_counting_hash[hash]
-    hash[key] += 1
+    update_counting_hash[hash] += key
   else
-    hash[key] = 1
+    update_counting_hash[hash] = key
   end
 end
